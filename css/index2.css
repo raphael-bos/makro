@@ -33,10 +33,10 @@ body,html{
 
 body{
     display: grid;
-    grid-template-rows: 10% auto;
+    grid-template-rows: 1em auto;
     grid-template-columns: auto;
     font-family: allerbold;
-    font-size: 10vmin;
+    font-size: 5em;
     /* font-size: calc(3.5vh + 3.5vw) */
     /* font-size: 8vmin; */
 }
