@@ -34,9 +34,9 @@ body,html{
 body{
     display: grid;
     grid-template-rows: 1em auto;
-    grid-template-columns: auto;
+    grid-template-columns: 100%;
     font-family: allerbold;
-    font-size: 5em;
+    font-size: 3em;
     /* font-size: calc(3.5vh + 3.5vw) */
     /* font-size: 8vmin; */
 }
