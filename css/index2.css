@@ -36,7 +36,7 @@ body{
     grid-template-rows: 1em auto;
     grid-template-columns: 100%;
     font-family: allerbold;
-    font-size: 3em;
+    font-size: 10vmin;
     /* font-size: calc(3.5vh + 3.5vw) */
     /* font-size: 8vmin; */
 }
