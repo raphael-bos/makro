@@ -33,15 +33,15 @@ body,html{
 
 body{
     display: grid;
-    grid-template-rows: 1em calc(100% - 1em);
-    grid-template-columns: 100%;
+    grid-template-rows: 1em auto;
+    grid-template-columns: auto;
     font-family: allerbold;
     font-size: 9vmin;
     /* font-size: calc(3.5vh + 3.5vw) */
     /* font-size: 8vmin; */
 }
 
-@media screen and (max-height: 400px)
+@media screen and (max-height: 600px)
 {
     body{
         font-size: 2.5em;
@@ -66,7 +66,7 @@ body input {
 }
 
 .navbar img{
-    height: 90%;
+    /* height: 90%; */
 }
 .navbar :last-child{
     justify-self: left;
