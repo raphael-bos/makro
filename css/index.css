@@ -1,0 +1,142 @@
+   
+    @font-face {
+        font-family: 'aller_lightregular';
+        src: url('../fontes/Aller_Lt/aller_lt-webfont.woff2') format('woff2'),
+             url('../fontes/Aller_Lt/aller_lt-webfont.woff') format('woff'),
+             url('../fontes/Aller_Lt/aller_lt-webfont.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;    
+    }
+        @font-face {
+        font-family: 'aller_displayregular';
+        src: url('../fontes/Aller_Lt/allerdisplay-webfont.woff2') format('woff2'),
+             url('../fontes/Aller_Lt/allerdisplay-webfont.woff') format('woff'),
+             url('../fontes/Aller_Lt/allerdisplay-webfont.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;    
+    }
+    @font-face {
+        font-family: 'allerbold';
+        src: url('../fontes/Aller_Bd/aller_bd-webfont.woff2') format('woff2'),
+             url('../fontes/Aller_Bd/aller_bd-webfont.woff') format('woff'),
+             url('../fontes/Aller_Bd/aller_bd-webfont.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;    
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    a{
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        color: inherit;
+        text-decoration: none;
+      }
+        
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      font-family: "allerbold";
+      color: #fff;      
+    }
+
+    .flex-container > div {
+        background-color: #F4212D;
+        text-align: left;
+        font-size: 50px;
+        margin-top: 5px;           
+      }
+
+      .flex-container .box-logo{
+        background-color: #fff;
+        margin-left:120px;
+    }
+
+    .flex-container > .box-saudacao{
+        font-size:112px;
+        padding-left: 50px;
+        padding-top:40px;
+        padding-bottom: 45px;
+    } 
+    
+      .box-acesso-topo{
+       font-size:75px;
+       line-height: 30px;
+       margin-top: 80px;
+       text-align: center;
+       padding-bottom: 20px;
+       font-family: 'aller_lightregular';
+       font-weight: 900;
+      }
+
+      .box-acesso-topo input{
+          width:90%;
+          height:140px;
+          border-radius: 15px;
+      }
+
+      .box-acesso-topo form{
+          padding-top: 40px;
+      }
+
+      .box-acesso-fim{
+        line-height: 30px;
+        margin-top: 130px;
+        margin-bottom:80px;
+        margin-left: 120px;
+        font-size: 112px;
+        display:inline-block;        
+       }
+
+       .box-acesso-fim img{
+            width:18%;
+            height:28%;
+            margin-left: 80px;            
+            float:right;
+            margin-top: -60px;
+       }
+
+       .box-acesso-anonimo{
+           padding-bottom:30px;
+           height: 282px;  
+       }
+       
+       .box-acesso-anonimo div{
+        white-space: pre;
+        font-size: 80px;
+        margin-top: -10px; 
+        line-height: 85px;
+       }
+
+       #anonimoIMG{
+        float: left;
+        margin-top: 85px;
+        margin-left: 30px;
+       }
+       #setaIMG{
+        float: right;
+        margin-top:75px;
+        margin-right:40px;
+       }
+
+       /* ========== MOBILE FIRST ==========*/
+
+/* SMALL DEVICES - SMARTPHONES */
+@media screen and (min-width: 480px) {
+    
+    }
+    /* SMALL DEVICES - TABLETS*/
+    @media screen and (min-width: 768px) {
+    
+    }
+    /* MEDIUM DEVICES - TABLETS & DESKTOPS*/
+    @media screen and (min-width: 960px) {
+    
+    }
+    /* LARGE DEVICES - WIDE SCREENS*/
+    @media screen and (min-width: 1280px) {
+    
+    }

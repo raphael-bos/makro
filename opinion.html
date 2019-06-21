@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./css/ofertas.css">
+    <link rel="stylesheet" type="text/css" href="./css/opinion.css">
+    <link rel="stylesheet" type="text/css" href="./fontes/font_icons/font/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="./fontes/font_icons/font-smiles/font/flaticon.css">
+    <script type="text/javascript" src="./js/opinion.js"></script>
+</head>
+<body>
+    <div class="grid-logo">
+        <a href="index.html">
+        <div class="box box-single box-logo"><div>
+            <img id="arrow" src="img/arrow.png" alt="Seta preta" width="50px">
+            <img id="logo" src="img/makro_logo.png" alt="Makro"></div></div>
+        </a>
+    </div>
+    <div class="grid">
+        <div class="box box-single"><div id="texto-despedida">¡Gracias, y nos gustaria conocer tu opinion sobre este servicio!</div></div>                
+        <div id="box-bueno" class="box box-single">
+                <div>
+                    <div><i id="font-smile" class="flaticon-face"></i><span id="font-text">Bueno</span></div>
+                </div>
+        </div>
+        <div id="box-normal" class="box box-single">
+                <div>
+                    <div><i id="font-smile" class="flaticon-weird"></i><span id="font-text">Normal</span></div>
+                </div>
+        </div>
+        <div id="box-malo" class="box box-single">
+                <div>
+                    <div><i id="font-smile" class="flaticon-sad"></i><span id="font-text">Malo</span></div>
+                </div>
+        </div>             
+        <div id="box-opinion" class="box box-single hide">
+                <div id="opinion-final">
+                    <span>Deje tu opinión (opcional)</span>
+                    <form action="submit.php">
+                        <input id="number" name="number" type="text" />
+                        <input id="submit" name="submit" type="submit" style="display:none" />
+                    </form>
+                </div>
+                <button class="button button4">Enviar</button>
+            </div>                 
+    </div>
+</body>
+</html>

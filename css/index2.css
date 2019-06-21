@@ -1,0 +1,151 @@
+
+@font-face {
+    font-family: 'aller_lightregular';
+    src: url('../fontes/Aller_Lt/aller_lt-webfont.woff2') format('woff2'),
+            url('../fontes/Aller_Lt/aller_lt-webfont.woff') format('woff'),
+            url('../fontes/Aller_Lt/aller_lt-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;    
+}
+    @font-face {
+    font-family: 'aller_displayregular';
+    src: url('../fontes/Aller_Lt/allerdisplay-webfont.woff2') format('woff2'),
+            url('../fontes/Aller_Lt/allerdisplay-webfont.woff') format('woff'),
+            url('../fontes/Aller_Lt/allerdisplay-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;    
+}
+@font-face {
+    font-family: 'allerbold';
+    src: url('../fontes/Aller_Bd/aller_bd-webfont.woff2') format('woff2'),
+            url('../fontes/Aller_Bd/aller_bd-webfont.woff') format('woff'),
+            url('../fontes/Aller_Bd/aller_bd-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;    
+}
+
+body,html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 10% auto;
+    grid-template-columns: auto;
+    font-family: allerbold;
+    font-size: 10vmin;
+    /* font-size: calc(3.5vh + 3.5vw) */
+    /* font-size: 8vmin; */
+}
+
+body img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+body input {
+    font-size: 100%;
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: 15% auto;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.navbar img{
+    height: 90%;
+}
+.navbar :last-child{
+    justify-self: left;
+    padding-left: 10px;
+}
+.card{
+    background-color:#F4212D;
+    color: white;
+    padding: 15px;
+    justify-items: center;
+    align-items: center;
+}
+
+.card-button:hover{
+    background-color: #E0000C
+}
+
+.page1-grid
+{
+    display: grid;
+    grid-template-rows: min-content auto min-content; 
+    grid-template-columns: auto;
+    grid-gap: 0.5%;
+}
+
+@media screen and (orientation: landscape)
+{
+    .page1-grid{
+        display: grid;
+        grid-template-rows: auto min-content; 
+        grid-template-columns: minmax(50%, 60%) auto;
+        grid-template-areas:
+            "content nit"
+            "anonimo anonimo "
+
+    }
+    .page1-grid > :first-child {
+        grid-area: content;
+        vertical-align: center;
+    }
+    .page1-grid .nit{
+        font-size: 80%;
+        grid-area: nit;
+    }
+    .page1-grid .acesso-anonimo{
+        font-size: 80%;
+        grid-area: anonimo;
+    }
+}
+
+.nit{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    font-family: aller_lightregular;
+    font-size: 80%;
+}
+
+.nit input{
+    width: 90%;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+}
+
+.nit *{
+    padding: 10px;
+}
+
+.nit > :last-child{
+    display: grid;
+    grid-template-columns: auto auto;
+    font-family: allerbold; 
+}
+
+.acesso-anonimo{
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: auto;
+    font-size:  70%;
+    text-align: justify;
+}
+
+.acesso-anonimo div{
+    padding-right: 15px;
+    padding-left: 15px;
+}

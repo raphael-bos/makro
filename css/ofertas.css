@@ -1,0 +1,276 @@
+@font-face {
+  font-family: 'aller_lightregular';
+  src: url('../fontes/Aller_Lt/aller_lt-webfont.woff2') format('woff2'),
+       url('../fontes/Aller_Lt/aller_lt-webfont.woff') format('woff'),
+       url('../fontes/Aller_Lt/aller_lt-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;    
+}
+  @font-face {
+  font-family: 'aller_displayregular';
+  src: url('../fontes/Aller_Lt/allerdisplay-webfont.woff2') format('woff2'),
+       url('../fontes/Aller_Lt/allerdisplay-webfont.woff') format('woff'),
+       url('../fontes/Aller_Lt/allerdisplay-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;    
+}
+@font-face {
+  font-family: 'allerbold';
+  src: url('../fontes/Aller_Bd/aller_bd-webfont.woff2') format('woff2'),
+       url('../fontes/Aller_Bd/aller_bd-webfont.woff') format('woff'),
+       url('../fontes/Aller_Bd/aller_bd-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;    
+}
+
+@font-face {
+  font-family: 'allerbold_italic';
+  src: url('aller_bdit.woff2') format('woff2'),
+       url('aller_bdit.woff') format('woff'),
+       url('aller_bdit.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'allerregular';
+  src: url('aller_rg.woff2') format('woff2'),
+       url('aller_rg.woff') format('woff'),
+       url('aller_rg.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+html, body {
+    height: 99.7%;
+    margin: 0;
+  }
+
+  a{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: inherit;
+    text-decoration: none;
+  }
+
+  input{
+    width:90%;
+    height:90px;
+    border-radius: 20px;
+}
+
+  .grid-logo{
+    min-height: 5.5%;
+    justify-content: center;
+    margin-top: 0.7%;
+    margin-left: 5.1%;
+  }
+  
+  #arrow {
+      margin-bottom: 0.7%;
+      margin-right: 2%;
+  }
+    
+  .grid-ofertas{
+    min-height: 30%;    
+    background-color: #E5E2E2;
+    height: 74.19%;
+  }
+
+  #title-ofertas{
+    font-size: 70px;
+    margin-left: 9%;
+    padding-top: 3.5%;
+    padding-bottom: 2%;
+    color: #F42137;
+    font-family: 'aller_lightregular';    
+    font-weight: bold;
+  }
+
+  .box-ofertas{
+    /* height: 50%; */
+    background-color: #E5E2E2;
+    width: 86%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-height: 87%;
+    height:85.9%;   
+    overflow: scroll;    
+  }
+
+  .grid {
+    min-height: 20.4%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    background-color:#E5E2E2;
+    font-family: 'allerbold';
+    font-weight: 1000;
+  }
+
+  .box-single{
+    display: flex; 
+    margin-top: 0px;
+    flex-basis: 100%;  
+    justify-content: center;
+    flex-direction: column;
+  }
+  .box-duplo{
+    display: flex; 
+      margin-top: 0px;
+      flex-basis: 49%;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .box-triplo{
+    display: flex; 
+    flex-basis: 32.4%;  
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .hide
+  {
+    display:none;
+  }
+
+  .oferta{
+      width: 100%;
+      min-height: 24%;
+      overflow: hidden;
+      background: #fff;
+      margin-bottom: .4%;
+      height: 24.2%;
+  }
+
+  .img-oferta{
+      float:left;      
+    }
+
+    .titulo-oferta{
+        display: block;
+        margin-left: 32%;
+        font-size: 350%;
+        font-weight: bold;
+        line-height: 85%;
+        margin-top: 1%;
+    }
+
+    .descricao-oferta{
+        display: block;
+        margin-top: 2%;
+        margin-left: 32%;
+        font-size: 220%;
+    }
+
+    .container-preco{
+        display: inline-block;
+        margin-top: 3%;
+        margin-left: 17%;
+        font-size:110%;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    .preco-oferta{
+        display: block;
+        margin-top: 3%;
+        margin-left: 62%;
+        font-size: 200%;
+        color: #F42137;
+    }
+
+    .prazo-oferta{
+        /* display: inline-block;         */
+        margin-left: 3%;
+        font-size: 230%;
+        float: left;
+        margin-top: 6%;
+    }    
+
+    .unidade-oferta{
+        display: block;
+        margin-left: 62%;
+        font-size: 200%;
+        color: #F42137;
+    }
+  
+  .grid > div > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 400%;
+    /* line-height: 165%; */
+    text-align: center;
+    color:white;
+    
+  }
+
+  #texto_continuar_sinDesc{
+      line-height: 100%; 
+      font-size: 73%;
+      margin: 0 auto;
+      width: 90%;     
+  }
+
+  #img-correo{
+    float: left;
+    transform: translateX(90%);
+  }
+
+  #img-qr{
+    float: left;
+    transform: translateX(100%);
+  }
+
+  #img-codigoqr{
+    float: left;
+    transform: translateX(50%);
+    
+  }
+
+  #box-codigoqr span{
+    margin-right: 19%;
+    margin-top:2%;
+  } 
+
+  #texto-codigoqr{
+    color: #F42137;
+    font-size: 67%;
+    margin-left: 45px;
+    font-weight: normal;
+    font-family: aller_lightregular;
+    margin-bottom: 2.5%;
+  }
+  
+  .box {
+    margin: 5px 8px 1px 1px}
+  #box-continuar { background-color: #F42137;}
+  #box-retornarfim { background-color: #F42137; }
+
+  #box-correoconfirma div {  
+    line-height: 100%; 
+    font-size: 273%;
+    margin: 0 auto;
+    width: 90%;
+    color:  #F42137;
+  }
+
+  #box-correoconfirma div input {       
+    font-size: 140%;    
+    color: #F42137;
+  }
+
+  #box-retornar{
+    background-color: #F42137;
+  }
+  #box-descargar { background-color: #F42137; }
+  #box-continuarsindesc {
+       background-color:#F42137;
+       
+    }
+  #box-correo { background-color: #F42137;}
+  #box-codigoqr { background-color: #F42137; }

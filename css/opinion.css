@@ -1,0 +1,77 @@
+html, body{
+    height: 97.2%;
+}
+
+input{
+    width: 98%;
+}
+
+#texto-despedida{
+    margin: 12% auto 17% auto;
+    width: 80%;
+    font-size: 640%;
+    text-align:left;
+    line-height: 135%;
+}
+
+.grid{
+    height: 100%;
+}
+
+.grid div{
+    background-color: #F42137;
+}
+
+#font-smile{
+    font-size: 200%;
+    color:white;
+    margin: 0 auto;
+    line-height: 184%;
+    float: left;
+    margin: 0 10% 0 12%;    
+}
+
+#font-text {
+    transform: translateY(100%);
+    display: inline-block;   
+}
+
+#opinion-final{
+    background-color:inherit;
+    float: left;
+    width:50%;
+    
+}
+
+#box-opinion {
+    background-color: inherit;
+    /* display: inline; */
+    margin: 2% 0 3% 8%
+}
+
+#box-opinion div{
+    width: 63%;
+    font-size: 285%;
+    color: #F42137;
+}
+
+#box-opinion div input{
+    background-color:"grey";
+}
+
+.grid > div > div{
+    text-align: left;
+}
+
+.button {
+    background-color: #B6040C;
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 320%;
+    margin: 1.5% 5%;
+    cursor: pointer;
+    border-radius:20px;
+    width: 23%;
+    height: 90%;
+  }
