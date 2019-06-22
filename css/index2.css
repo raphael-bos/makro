@@ -57,7 +57,7 @@ body input {
 }
 
 .navbar img{
-    /* height: 90%; */
+    height: 60%;
 }
 .navbar :last-child{
     justify-self: left;
