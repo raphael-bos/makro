@@ -63,6 +63,7 @@
     grid-template-columns: 20% auto 20%;
     grid-template-rows: auto;
     text-align: justify;
+    font-size: 80%; 
 }
 
 .acesso-anonimo div{
