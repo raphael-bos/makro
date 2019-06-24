@@ -23,13 +23,14 @@
     grid-template-rows: 2fr 1fr;
     grid-template-columns: auto;
     place-content: center;
-    font-size: 2vw;
+    font-size: 3vw;
     box-sizing: border-box;
 }
 
 @media screen and (orientation: landscape)
 {
-    body{
+    .v-image-desc{
         font-size: 2vw;
+        grid-template-rows: 1.5fr 1fr;
     }
 }
