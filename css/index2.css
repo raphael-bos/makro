@@ -1,80 +1,3 @@
-
-@font-face {
-    font-family: 'aller_lightregular';
-    src: url('../fontes/Aller_Lt/aller_lt-webfont.woff2') format('woff2'),
-            url('../fontes/Aller_Lt/aller_lt-webfont.woff') format('woff'),
-            url('../fontes/Aller_Lt/aller_lt-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;    
-}
-    @font-face {
-    font-family: 'aller_displayregular';
-    src: url('../fontes/Aller_Lt/allerdisplay-webfont.woff2') format('woff2'),
-            url('../fontes/Aller_Lt/allerdisplay-webfont.woff') format('woff'),
-            url('../fontes/Aller_Lt/allerdisplay-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;    
-}
-@font-face {
-    font-family: 'allerbold';
-    src: url('../fontes/Aller_Bd/aller_bd-webfont.woff2') format('woff2'),
-            url('../fontes/Aller_Bd/aller_bd-webfont.woff') format('woff'),
-            url('../fontes/Aller_Bd/aller_bd-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;    
-}
-
-body,html{
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-}
-
-body{
-    display: grid;
-    grid-template-rows: 1em auto;
-    grid-template-columns: auto;
-    font-family: allerbold;
-    font-size: 9vw;
-}
-
-body img {
-    max-height: 100%;
-    max-width: 100%;
-}
-
-body input {
-    font-size: 100%;
-}
-
-.navbar{
-    display: grid;
-    grid-template-columns: 15% auto;
-    grid-template-rows: auto;
-    justify-items: center;
-    align-items: center;
-}
-
-.navbar img{
-    height: 60%;
-}
-.navbar :last-child{
-    justify-self: left;
-    padding-left: 10px;
-}
-.card{
-    background-color:#F4212D;
-    color: white;
-    padding: 15px;
-    justify-items: center;
-    align-items: center;
-}
-
-.card-button:hover{
-    background-color: #E0000C
-}
-
 .page1-grid
 {
     display: grid;
@@ -85,9 +8,6 @@ body input {
 
 @media screen and (orientation: landscape)
 {
-    body{
-        font-size: 5vw;
-    }
     .page1-grid{
         display: grid;
         grid-template-rows: auto min-content; 
@@ -142,7 +62,6 @@ body input {
     display: grid;
     grid-template-columns: 20% auto 20%;
     grid-template-rows: auto;
-    font-size:  70%;
     text-align: justify;
 }
 
