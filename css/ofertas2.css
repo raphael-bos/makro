@@ -1,0 +1,35 @@
+.ofertas-grid
+{
+    background-color: #e5e2e2;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto min-content;
+    grid-auto-rows: min-content;
+    grid-gap: 0.5%;
+    font-size: 3vw;
+}
+
+.navigation-footer{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+    grid-gap: 0.5%;
+}
+
+.v-image-desc{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: auto;
+    place-content: center;
+    font-size: 2vw;
+    box-sizing: border-box;
+}
+
+@media screen and (orientation: landscape)
+{
+    body{
+        font-size: 2vw;
+    }
+}
