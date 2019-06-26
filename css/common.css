@@ -147,7 +147,7 @@ a, a *{
 .h-image-desc{
     display: grid;
     grid-template-columns: auto auto;
-    font-size: 50%;
+    font-size: 35%;
 }
 
 .h-image-desc > :last-child {
