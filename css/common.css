@@ -43,7 +43,6 @@ body{
     grid-template-rows: 1em auto;
     grid-template-columns: auto;
     font-family: allerbold;
-    /* font-size: 40px; */
     font-size: 9vw;
 }
 
