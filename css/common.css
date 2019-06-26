@@ -149,9 +149,9 @@ a, a *{
     grid-template-columns: auto auto;
     font-size: 35%;
 }
-
+ 
 .h-image-desc > :last-child {
-    justify-self: left;
+    justify-self: center;
 }
 
 @media screen and (orientation: landscape)
@@ -161,11 +161,15 @@ a, a *{
     }
 
     .h-image-desc{
-        font-size: 35%;
+        font-size: 40%;
+    }
+
+    .h-image-desc > :last-child {
+        justify-self: left;
     }
 
     .v-image-desc{
         grid-template-rows: 1.5fr 1fr;
-        font-size: 35%;
+        font-size: 40%;
     }
 }
