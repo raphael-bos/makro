@@ -56,7 +56,7 @@
     font-size: 140%;
 }
 
-@media screen and (orientation: landscape)
+@media screen and (min-aspect-ratio: 6/5)
 {
 
 }

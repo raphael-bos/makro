@@ -6,7 +6,7 @@
     grid-gap: var(--grid-gap);
 }
 
-@media screen and (orientation: landscape)
+@media screen and (min-aspect-ratio: 6/5)
 {
     .index-grid{
         display: grid;
