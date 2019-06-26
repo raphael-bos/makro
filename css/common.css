@@ -36,15 +36,16 @@ body,html{
     padding: 0;
     height: 100%;
     width: 100%;
+    font-size: 9vw;
+    font-family: allerbold;
+    font-size: 9vw;
 }
 
 body{
     display: grid;
     /* grid-template-rows: 1em auto; */
-    grid-template-rows: 42px auto;
+    grid-template-rows: 9vw auto;
     grid-template-columns: auto;
-    font-family: allerbold;
-    font-size: 9vw;
 }
 
 body img {
