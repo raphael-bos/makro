@@ -1,4 +1,11 @@
 
+:root{
+    --hover-color: #b80209;
+    --card-color: #F4212D;
+    --grid-gap: 3px;
+    --gray-background: #e5e2e2;
+}
+
 @font-face {
     font-family: 'aller_lightregular';
     src: url('../fontes/Aller_Lt/aller_lt-webfont.woff2') format('woff2'),
@@ -46,6 +53,21 @@ body img {
 
 body input {
     font-size: 100%;
+    width: 95%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+body button{
+    outline: none;
 }
 
 .navbar{
@@ -54,19 +76,25 @@ body input {
     grid-template-rows: auto;
     justify-items: center;
     align-items: center;
+    text-decoration: none;
+}
+
+a, a *{
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .navbar img{
     height: 60%;
 }
-.navbar :last-child{
+.navbar > :last-child{
     justify-self: left;
     padding-left: 10px;
 }
 .card{
-    background-color:#F4212D;
+    background-color: var(--card-color);
     color: white;
-    padding: 15px;
+    padding: 10px;
     justify-items: center;
     align-items: center;
 }
@@ -77,7 +105,7 @@ body input {
 }
 
 .card-button:hover{
-    background-color: #E0000C
+    background-color: var(--hover-color);
 }
 
 .title{
@@ -85,9 +113,59 @@ body input {
     align-items: center;
 }
 
+.grid-collumn-span-3{
+    grid-column: span 3;
+}
+
+.grid-collumn-span-2{
+    grid-column: span 2;
+}
+
+.grid-row-span-2{
+    grid-row: span 2;
+}
+
+.grid-row-span-3{
+    grid-row: span 3;
+}
+.grid-collumn-span-6{
+    grid-column: span 6;
+}
+
+.hide{
+    display: none !important;
+}
+
+.v-image-desc{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: auto;
+    place-content: center;
+    font-size: 35%;
+}
+
+.h-image-desc{
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 50%;
+}
+
+.h-image-desc > :last-child {
+    justify-self: left;
+}
+
 @media screen and (orientation: landscape)
 {
     body{
-        font-size: 5vw;
+        font-size: calc(5vw) ;
+    }
+
+    .h-image-desc{
+        font-size: 35%;
+    }
+
+    .v-image-desc{
+        grid-template-rows: 1.5fr 1fr;
+        font-size: 35%;
     }
 }

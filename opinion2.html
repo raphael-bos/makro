@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/opinion2.css">
+    <link rel="stylesheet" type="text/css" href="./fontes/font_icons/font/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="./fontes/font_icons/font-smiles/font/flaticon.css">
+    <script src="js/ofertas2.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index2.html" style="display: grid; height: 100%;
+        width: 100%; align-items: center; justify-items: center;">
+         <img src="img/arrow.png" style="display: block;">
+      </a>
+      <img src="img/makro_logo.png">
+    </div>
+    <div class="opinion-grid">
+      <div class="card">
+        <label>
+            ¡Gracias, y nos gustaria conocer tu opinion sobre este servicio!
+        </label>
+      </div>
+      <input type="radio" name="opinion" value="good" id="good">
+      <label class="card card-button opinion-card-layout" for="good" >
+        <div><b><span class="flaticon-face"></span></b></div>
+        <div><span> Bueno</span></div>
+      </label>
+      <input type="radio" name="opinion" value="medium" id="medium">
+      <label class="card card-button opinion-card-layout" for="medium">
+        <div><b><span class="flaticon-weird"></span></b></div>
+        <div><span>Normal</span></div>
+      </label>
+      <input type="radio" name="opinion" value="bad" id="bad">
+      <label class="card card-button opinion-card-layout" for="bad">
+        <div><b><span class="flaticon-sad"></span></b></div>
+        <div><span> Malo</span></div>
+      </label>  
+      <div class="send-opinion-layout">
+        <div><label>Deje tu opinión(opcional)</label></div>
+        <div><input type="text" spellcheck="false" name="opinion"></div>
+        <div"><button>Enviar</button></div>
+      </div>
+    </div>
+  </body>
+</html>

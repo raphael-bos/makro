@@ -1,31 +1,27 @@
-.page1-grid
+.index-grid
 {
     display: grid;
-    grid-template-rows: auto auto min-content; 
+    grid-template-rows: auto auto min-content;
     grid-template-columns: auto;
-    grid-gap: 0.5%;
+    grid-gap: var(--grid-gap);
 }
 
 @media screen and (orientation: landscape)
 {
-    .page1-grid{
+    .index-grid{
         display: grid;
         grid-template-rows: auto min-content; 
         grid-template-columns: minmax(50%, 60%) auto;
         grid-template-areas:
             "content nit"
-            "anonimo anonimo "
+            "anonimo anonimo ";
 
     }
-    .page1-grid > :first-child {
-        grid-area: content;
-        vertical-align: middle;
-    }
-    .page1-grid .nit{
+    .index-grid .nit{
         font-size: 80%;
         grid-area: nit;
     }
-    .page1-grid .acesso-anonimo{
+    .index-grid .acesso-anonimo{
         font-size: 80%;
         grid-area: anonimo;
     }
@@ -34,18 +30,10 @@
 .nit{
     display: grid;
     grid-template-rows: auto auto auto;
-    justify-items: center;
-    align-items: center;
+    place-items: center;
     text-align: center;
     font-family: aller_lightregular;
     font-size: 80%;
-}
-
-.nit input{
-    width: 90%;
-    border-radius: 10px;
-    text-align: center;
-    outline: none;
 }
 
 .nit *{
@@ -54,7 +42,7 @@
 
 .nit > :last-child{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: min-content auto;
     font-family: allerbold; 
 }
 

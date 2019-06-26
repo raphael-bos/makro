@@ -4,33 +4,58 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/ofertas2.css">
+    <script src="js/ofertas2.js"></script>
   </head>
   <body>
     <div class="navbar">
-      <img src="img/arrow.png">
+      <a href="index2.html" style="display: grid; height: 100%;
+       width: 100%; align-items: center; justify-items: center;">
+        <img src="img/arrow.png" style="display: block;">
+      </a>
       <img src="img/makro_logo.png">
     </div>
     <div class="ofertas-grid">
-      <div>Conoce tus Ofertas</div>
+      <div class="ofertas-div"><span class="ofertas-title">Conoce tus ofertas</span></div>
       <div class="navigation-footer">
-        <div class="card v-image-desc">
+        <a href="index2.html" id="return-div" class="card card-button v-image-desc grid-collumn-span-2">
           <img src="img/arrow-white-left.png">
-          <div>
-              <label>Retornar</label>
-          </div>
+          <div><label>Retornar</label></div>
+        </a>
+        <div id="download-div" class="card card-button v-image-desc grid-collumn-span-2"
+        onclick="clickDownload()">
+          <img src="img/descargar-white.png">
+          <div><label>Descargar</label></div>
         </div>
-        <div class="card v-image-desc">
-            <img src="img/descargar-white.png">
-            <div>
-                <label>Descargar</label>
-            </div>
+        <a href="opinion2.html" id="follow-div" class="card card-button v-image-desc grid-collumn-span-2">
+          <img src="img/arrow-white-right.png">
+          <div><label>Continuar sin descargar</label></div>
+        </a>
+        <div id="qrcode-div" class="card card-button h-image-desc grid-collumn-span-3 hide"
+          onclick="clickQR()">
+          <img src="img/codigoQR-white.png">
+          <div><label>Codigo QR</label></div>
         </div>
-        <div class="card v-image-desc">
-            <img src="img/arrow-white-right.png">
-            <div>
-                <label style="font-size: 80%;">Continuar sin descargar</label>
-            </div>
+        <div id="email-div" class="card card-button h-image-desc grid-collumn-span-3 hide"
+          onclick="clickEmail()">
+          <img src="img/email-white.png">
+          <div><label>Correo electrónico</label></div>
         </div>
+        <div id="qrcode-content-div" class="hide qr-code-div grid-collumn-span-6 grid-row-span-2">
+          <div><label>Toma una foto de tu código</label></div>
+          <img src="img/codigoQR.png">
+        </div>
+        <div id="email-content-div" class="email-content-div grid-collumn-span-6 grid-row-span-2 hide">
+          <label>Confirma tu correo</label>
+          <input type="text" name="email" >
+        </div>
+        <a href="index2.html" id="return-bottom-div" class="card card-button v-image-desc grid-collumn-span-3 hide">
+          <img src="img/arrow-white-left.png">
+          <div><label>Retornar</label></div>
+        </a>
+        <a href="opinion2.html" id="follow-bottom-div" class="card card-button v-image-desc grid-collumn-span-3 hide">
+          <img src="img/arrow-white-right.png">
+          <div><label>Continuar</label></div>
+        </a>
       </div>
     </div>
   </body>
