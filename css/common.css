@@ -158,7 +158,7 @@ a, a *{
 @media screen and (orientation: landscape)
 {
     body{
-        font-size: calc(5vw) ;
+        font-size: calc(30px) ;
     }
 
     .h-image-desc{
