@@ -40,7 +40,8 @@ body,html{
 
 body{
     display: grid;
-    grid-template-rows: 1em auto;
+    /* grid-template-rows: 1em auto; */
+    grid-template-rows: 42px auto;
     grid-template-columns: auto;
     font-family: allerbold;
     font-size: 9vw;
